@@ -37,13 +37,13 @@ export const DEMO_COLLECTIONS: Collection[] = [
 export const DEMO_PLACES: Place[] = [
   {
     id: 'place-1',
-    name: 'KB Cafe Shop',
-    category: 'cafe',
+    name: 'Domicile',
+    category: 'contact',
     status: 'favorite',
     rating: 5,
-    lat: 48.8801,
-    lng: 2.3392,
-    notes: 'Café exceptionnel, terrasse agréable donnant sur la rue, équipe très accueillante. Je recommande le flat white.',
+    lat: 50.297038,
+    lng: 2.895968,
+    notes: '',
     collectionIds: ['col-1'],
     createdAt: Date.now() - 86400000 * 2,
   },
