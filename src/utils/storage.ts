@@ -13,21 +13,21 @@ export const CATEGORIES: Category[] = [
 export const DEMO_COLLECTIONS: Collection[] = [
   {
     id: 'col-1',
-    name: '☕ Café gourmand',
-    description: 'Cafes avec bon Wi-Fi, prises électriques et excellent café.',
-    color: '#B45309',
+    name: '📚 Mes contacts',
+    description: 'Personnes que je souhaite garder en mémoire.',
+    color: '#0EA5E9',               // même couleur que la catégorie “Contacts”
+    createdAt: Date.now() - 86400000 * 7,
+  },
+   {
+    id: 'col-2',
+    name: '🏞️ Randonnées du mois',
+    description: 'Sentiers découverts récemment.',
+    color: '#10B981',
     createdAt: Date.now() - 86400000 * 5,
   },
   {
-    id: 'col-2',
-    name: '🌲 Balades du week-end',
-    description: 'Beaux espaces verts et parcours agréables pour se déconnecter.',
-    color: '#10B981',
-    createdAt: Date.now() - 86400000 * 4,
-  },
-  {
     id: 'col-3',
-    name: '🍔 Bonnes tables du vendredi',
+    name: '🍔 Bonnes tables',
     description: 'Adresses gourmandes et conviviales pour fêter la fin de semaine.',
     color: '#EF4444',
     createdAt: Date.now() - 86400000 * 3,
@@ -38,15 +38,16 @@ export const DEMO_PLACES: Place[] = [
   {
     id: 'place-1',
     name: 'Domicile',
-    category: 'other',
+    category: 'contacts',
     status: 'favorite',
     rating: 5,
     lat: 50.297038,
     lng: 2.895968,
-    notes: '',
+    notes: 'Domicile de Mamie',
     collectionIds: ['col-1'],
     createdAt: Date.now() - 86400000 * 2,
   },
+   
   {
     id: 'place-2',
     name: 'Parc des Buttes-Chaumont',
@@ -79,7 +80,7 @@ export const DEMO_PLACES: Place[] = [
     rating: 4,
     lat: 48.8979,
     lng: 2.3486,
-    notes: 'Ambiance tiers-lieu et co-working dans une ancienne gare réaménagée. Belle démarche éco-responsable.',
+    notes: 'Ambiance dans une ancienne gare réaménagée. Belle démarche éco-responsable.',
     collectionIds: ['col-1'],
     createdAt: Date.now() - 3600000 * 2,
   }
