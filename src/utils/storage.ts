@@ -13,7 +13,7 @@ export const CATEGORIES: Category[] = [
 export const DEMO_COLLECTIONS: Collection[] = [
   {
     id: 'col-1',
-    name: '☕ Cafés pour travailler',
+    name: '☕ Café gourmand',
     description: 'Cafes avec bon Wi-Fi, prises électriques et excellent café.',
     color: '#B45309',
     createdAt: Date.now() - 86400000 * 5,
@@ -38,7 +38,7 @@ export const DEMO_PLACES: Place[] = [
   {
     id: 'place-1',
     name: 'Domicile',
-    category: 'contact',
+    category: 'other',
     status: 'favorite',
     rating: 5,
     lat: 50.297038,
